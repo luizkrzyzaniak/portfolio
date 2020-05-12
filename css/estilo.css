@@ -1,0 +1,41 @@
+body{
+	background-image: url("../arquivos/background.jpg");
+	background-size: 100vw 100vh;
+	font-family: arial;
+	height: 100vh;
+}
+
+.menu{
+	background-color: whitesmoke;
+}
+
+.menu ul{
+	display: flex;
+	justify-content: space-around;
+}
+
+.menu li{
+	list-style: none;
+}
+
+a{
+	color: teal;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #000000;
+}
+
+.site-subtitle,
+.site-title{
+	text-align: center;
+	color: whitesmoke;
+}
+
+.site-subtitle{
+	font-style: italic;
+}
+
+
+
