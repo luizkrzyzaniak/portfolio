@@ -1,13 +1,36 @@
+*{ /*Resetando CSS*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body{
-	background-image: url("../arquivos/background.jpg");
+	background-color: #696969;
 	background-size: 100vw 100vh;
 	font-family: arial;
 	height: 100vh;
 }
 
+header{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*Organizando o menu da pagina*/
 .menu{
 	background-color: whitesmoke;
+	position: fixed;
+	width: 100vw;
+	top: 0;
 }
+
+/*@media (min-width:400px){
+	header{
+		height: 50vh;
+	}
+}*/
 
 .menu ul{
 	display: flex;
@@ -18,12 +41,14 @@ body{
 	list-style: none;
 }
 
-a{
+.menu a{
 	color: teal;
 	text-decoration: none;
+	display: block;
+	padding: 10px 20px;
 }
 
-a:hover{
+.menu a:hover{
 	color: #000000;
 }
 
@@ -35,6 +60,11 @@ a:hover{
 
 .site-subtitle{
 	font-style: italic;
+}
+
+.img-portfolio{ /*definição das imagens do portfolio*/
+	width: 180px;
+	height: 180px;
 }
 
 
