@@ -7,7 +7,7 @@
 body{
 	background-color: #696969;
 	background-size: 100vw 100vh;
-	font-family: arial;
+	font-family: 'Ubuntu Mono', monospace;
 	height: 100vh;
 }
 
@@ -56,16 +56,69 @@ header{
 .site-title{
 	text-align: center;
 	color: whitesmoke;
+	font-family: 'Baloo Thambi 2', cursive;
 }
 
 .site-subtitle{
 	font-style: italic;
 }
 
-.img-portfolio{ /*definição das imagens do portfolio*/
-	width: 180px;
+.projetos{
+	padding: 2em;
+}
+
+.projetos h2{
+	font-family: 'Lobster', cursive;
+	color: whitesmoke;
+	margin-bottom: 1em;
+	font-size: 2em;
+	text-align: center;
+}
+
+.projetos .grid{
+	display: grid;
+	gap: 2em;
+}
+
+@media (min-width: 565px){
+	.projetos .grid{
+		grid-template-columns: repeat(2, 240px);
+		justify-content: center;
+	}
+}
+
+@media (min-width: 850px){
+	.projetos .grid{
+		grid-template-columns: repeat(3, 240px);
+		justify-content: center;
+	}
+}
+
+.projetos figure{
+	text-align: center;
+}
+
+.img-projetos{ /*definição das imagens do portfolio*/
+	width: 250px;
 	height: 180px;
 }
+
+@media (min-width: 1200px){
+	.projetos .grid{
+		grid-template-columns: repeat(3, 350px);
+		justify-content: center;
+	}
+
+	.img-projetos{
+		width: 350px;
+		height: 250px;
+	}
+}
+
+.projetos figcaption{
+	color: whitesmoke;
+}
+
 
 
 
