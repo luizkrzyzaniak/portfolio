@@ -134,13 +134,24 @@ header{
 
 .projetos .grid{
 	display: grid;
-	gap: 2em;
+	gap: 1em;
+	grid-template-columns: 240px;
+	text-align: center;
+	justify-content: center;
+	height: 150vh;
 }
 
 @media (min-width: 565px){
 	.projetos .grid{
 		grid-template-columns: repeat(2, 240px);
+		height: 100vh;
 		justify-content: center;
+	}
+
+	.card-back{
+		background-color: whitesmoke;
+		width: 250px;
+		height: 180px;
 	}
 }
 
@@ -148,8 +159,14 @@ header{
 	.projetos .grid{
 		grid-template-columns: repeat(3, 240px);
 		height: 100vh;
-		justify-content: center;
-		align-content: center;
+		/* justify-content: center; */
+		/* align-content: center; */
+	}
+
+	.card-back{
+		background-color: whitesmoke;
+		width: 250px;
+		height: 180px;
 	}
 }
 
@@ -166,11 +183,11 @@ header{
 	transition: transform 1s;
 }
 
-.img-projetos:hover{
+/* .img-projetos:hover{
 	transform: scale(1.04) rotate(-1deg);
-}
+} */
 
-/* .flip-card {
+.flip-card {
 	perspective: 600px;
 }
 
@@ -187,22 +204,27 @@ header{
 .card-front, .card-back{
 	position: absolute;
 	backface-visibility: hidden;
+	/* width: 240px;
+	height: 180px; */
 	-webkit-backface-visibility: hidden;
 }
 
 .card-back{
-	background-color: whitesmoke;
+	background-color: teal;
+	color: whitesmoke;
 	width: 240px;
 	height: 180px;
 	transform: rotateY(180deg);
-} */
+	border-radius: 10px;
+	padding: 3px;
+}
 
 @media (min-width: 1200px){
 	.projetos .grid{
 		grid-template-columns: repeat(3, 350px);
 		height: 100vh;
 		justify-content: center;
-		align-content: center;
+		/* align-content: center; */
 	}
 
 	.img-projetos{
@@ -210,11 +232,10 @@ header{
 		height: 250px;
 	}
 
-	/* .card-back{
-		background-color: whitesmoke;
+	.card-back{
 		width: 350px;
 		height: 250px;
-	} */
+	}
 }
 
 .projetos figcaption{
@@ -231,6 +252,7 @@ header{
 		grid-template-columns: repeat(2, 240px);
 		justify-content: center;
 	}
+
 }
 
 @media (min-width: 850px){
