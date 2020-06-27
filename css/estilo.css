@@ -6,8 +6,8 @@
 }
 
 body{
-	background-color: #696969;
-	background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(116,116,116,1) 50%, rgba(174,177,177,1) 100%) fixed;
+	background-color: #efefef;
+	/* background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(116,116,116,1) 50%, rgba(174,177,177,1) 100%) fixed; */
 	background-size: 100vw 100vh;
 	font-family: 'Ubuntu Mono', monospace;
 	height: 100vh;
@@ -22,7 +22,7 @@ header{
 
 /*Organizando o menu da pagina*/
 .menu{
-	background-color: whitesmoke;
+	background-color: #a9a9a9;
 	position: fixed;
 	width: 100vw;
 	top: 0;
@@ -46,7 +46,7 @@ header{
 }
 
 .menu a{
-	color: teal;
+	color: #efefef;
 	text-decoration: none;
 	display: block;
 	padding: 10px 20px;
@@ -55,7 +55,7 @@ header{
 
 .menu a:hover,
 .menu a:active{
-	background-color: teal;
+	background-color: #dc143c;
 	color: whitesmoke;
 }
 
@@ -75,13 +75,20 @@ header{
 .site-subtitle,
 .site-title{
 	text-align: center;
-	color: whitesmoke;
+	color: #878787;
 	font-family: 'Baloo Thambi 2', cursive;
 }
 
 .site-subtitle{
 	font-style: italic;
+	font-size: 2em;
 }
+
+.site-title{
+	font-size: 3em;
+}
+
+
 
 .sobre,
 .projetos,
@@ -102,9 +109,9 @@ header{
 .projetos h2,
 .contato h2{
 	font-family: 'Lobster', cursive;
-	color: whitesmoke;
+	color: #878787;
 	margin-bottom: 1em;
-	font-size: 2em;
+	font-size: 2.5em;
 	text-align: center;
 	padding-top: 5px;
 }
@@ -119,13 +126,13 @@ header{
 	width: 200px;
 	height: 200px;
 	object-fit: cover;
-	object-position: 0 -30px;
+	object-position: 0 -5px;
 	clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
 	/* border-radius: 50%; */
 }
 
 .sobre p{
-	color: whitesmoke;
+	color: #565656;
 	text-indent: 2em;
 	margin-bottom: 1.5em;
 	text-align: justify;
@@ -149,7 +156,7 @@ header{
 	}
 
 	.card-back{
-		background-color: whitesmoke;
+		/* background-color: whitesmoke; */
 		width: 250px;
 		height: 180px;
 	}
@@ -164,7 +171,6 @@ header{
 	}
 
 	.card-back{
-		background-color: whitesmoke;
 		width: 250px;
 		height: 180px;
 	}
@@ -210,13 +216,19 @@ header{
 }
 
 .card-back{
-	background-color: teal;
-	color: whitesmoke;
+	background-color: #dc143c;
+	color:#efefef;
 	width: 240px;
 	height: 180px;
 	transform: rotateY(180deg);
 	border-radius: 10px;
-	padding: 3px;
+	padding-top: 15px;
+	font-size: 1.5em;
+}
+
+.card-back a{
+	color: #efefef;
+	text-decoration: underline;
 }
 
 @media (min-width: 1200px){
@@ -238,9 +250,9 @@ header{
 	}
 }
 
-.projetos figcaption{
+/* .projetos figcaption{
 	color: whitesmoke;
-}
+} */
 
 .contato .grid{
 	display: grid;
@@ -267,7 +279,7 @@ header{
 }
 
 .contato a{
-	color: whitesmoke;
+	color: #dc143c;
 	font-size: 6em;
 	transition: text-shadow 1s;
 }
@@ -275,7 +287,7 @@ header{
 .contato a:hover,
 .contato a:active{
 	text-decoration: none;
-	text-shadow: 4px 4px 10px #505050;
+	text-shadow: 4px 4px 10px #878787;
 }
 
 
