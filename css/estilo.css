@@ -5,8 +5,22 @@
 	text-decoration: none;
 }
 
+:root{
+	--cor-bg: #FFF1D0;
+	--cor-bg-menu: #E94F37;
+	--cor-font-menu: #FFF1D0;
+	--cor-bg-hover-menu: #06AED5;
+	--cor-font-menu-hover: #FFF1D0;
+	--cor-subtitle: #11151C;
+	--cor-p: #11151C;
+	--cor-bg-card: #F0C808;
+	--cor-font-card: #11151C;
+	--cor-font-2: #06AED5;
+	--cor-shadown: #11151C;
+}
+
 body{
-	background-color: #efefef;
+	background-color: var(--cor-bg);
 	/* background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(116,116,116,1) 50%, rgba(174,177,177,1) 100%) fixed; */
 	background-size: 100vw 100vh;
 	font-family: 'Ubuntu Mono', monospace;
@@ -22,7 +36,7 @@ header{
 
 /*Organizando o menu da pagina*/
 .menu{
-	background-color: #a9a9a9;
+	background-color: var(--cor-bg-menu);
 	position: fixed;
 	width: 100vw;
 	top: 0;
@@ -46,7 +60,7 @@ header{
 }
 
 .menu a{
-	color: #efefef;
+	color: var(--cor-font-menu);
 	text-decoration: none;
 	display: block;
 	padding: 10px 20px;
@@ -55,8 +69,8 @@ header{
 
 .menu a:hover,
 .menu a:active{
-	background-color: #dc143c;
-	color: whitesmoke;
+	background-color: var(--cor-bg-hover-menu);
+	color: var(--cor-font-menu-hover);
 }
 
 .title{
@@ -75,7 +89,7 @@ header{
 .site-subtitle,
 .site-title{
 	text-align: center;
-	color: #878787;
+	color: var(--cor-subtitle);
 	font-family: 'Baloo Thambi 2', cursive;
 }
 
@@ -97,19 +111,13 @@ header{
 	min-height: 100vh;
 }
 
-@media (min-width:1200px){
-	.container{
-		margin-left: auto;
-		margin-right: auto;
-		max-width: 1200px;
-}
-}
+
 
 .sobre h2,
 .projetos h2,
 .contato h2{
 	font-family: 'Lobster', cursive;
-	color: #878787;
+	color: var(--cor-subtitle);
 	margin-bottom: 1em;
 	font-size: 2.5em;
 	text-align: center;
@@ -132,7 +140,7 @@ header{
 }
 
 .sobre p{
-	color: #565656;
+	color: var(--cor-p);
 	text-indent: 2em;
 	margin-bottom: 1.5em;
 	text-align: justify;
@@ -216,8 +224,8 @@ header{
 }
 
 .card-back{
-	background-color: #dc143c;
-	color:#efefef;
+	background-color: var(--cor-bg-card);
+	color: var(--cor-font-card);
 	width: 240px;
 	height: 180px;
 	transform: rotateY(180deg);
@@ -227,7 +235,7 @@ header{
 }
 
 .card-back a{
-	color: #efefef;
+	color: var(--cor-font-card);
 	text-decoration: underline;
 }
 
@@ -279,7 +287,7 @@ header{
 }
 
 .contato a{
-	color: #dc143c;
+	color: var(--cor-font-2);
 	font-size: 6em;
 	transition: text-shadow 1s;
 }
@@ -287,8 +295,9 @@ header{
 .contato a:hover,
 .contato a:active{
 	text-decoration: none;
-	text-shadow: 4px 4px 10px #878787;
+	text-shadow: 4px 4px 10px var(--cor-shadown);
 }
+
 
 
 
